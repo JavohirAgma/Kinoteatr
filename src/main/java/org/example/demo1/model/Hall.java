@@ -1,4 +1,5 @@
 package org.example.demo1.model;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -6,11 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class Movie {
+public class Hall {
     private Integer id;
     private String name;
-    private Integer duration;
-    private Integer ownerId;
+    private Integer seatsCount;
     private Boolean isActive;
 }

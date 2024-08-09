@@ -1,16 +1,20 @@
 package org.example.demo1.model;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.time.LocalTime;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Movie {
+public class Seance {
     private Integer id;
-    private String name;
-    private Integer duration;
-    private Integer ownerId;
+    private Integer movieId;
+    private Integer hallId;
+    private Integer haveSeats;
+    private LocalTime startTime;
+    private LocalTime endTime;
     private Boolean isActive;
 }
